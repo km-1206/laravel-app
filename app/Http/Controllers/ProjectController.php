@@ -13,6 +13,7 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::all();
+        $totalBudget = Project::all()->where
         return view('projects.index', compact('projects'));
 
     }
