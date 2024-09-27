@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('app.layout')
 
 @section('content')
     <h2>{{ $project->title }}</h2>
@@ -9,5 +9,5 @@
     <p><strong>Start Date:</strong> {{ $project->start_date }}</p>
     <p><strong>End Date:</strong> {{ $project->end_date }}</p>
 
-    <a href="{{ route('projects.index') }}" class="btn btn-secondary">Back to Projects</a>
+    <a href="{{ route('projects.index') }}" class="">Back to Projects</a>
 @endsection
